@@ -20,7 +20,7 @@ $(document).ready(function() {
                     $("#loginform").removeClass("success");
                     $("#loginform").addClass("fail");
                 }
-            $("#postResultDiv").html("<p>" + "Post sucess! <br>"+ "Email addres: " + user.email + "Password: " + user.upwd + "</br>" +"Valid user: " + user.valid + "</p>");
+             $("#postResultDiv").html("<p>" + "Post sucess! <br>" + "Email addres: " + user.email + "</br>" + "Password: " + user.upwd + "</br>" +"Valid user: " + user.valid + "</p>");
             },
             error: function(e){
                 alert("Error!");

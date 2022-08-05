@@ -10,6 +10,10 @@
     padding:1em;
 }
 
+#errormsg{
+    display: none;
+}
+
 form input, form label{
     display: block;
 }

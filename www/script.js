@@ -17,9 +17,11 @@ $(document).ready(function() {
                 if (user.valid == true) {
                     $("#loginform").addClass("success");
                     $("#loginform").removeClass("fail");
+                    document.getElementById("errormsg").style.display="none";
                 }else {
                     $("#loginform").removeClass("success");
                     $("#loginform").addClass("fail");
+                    document.getElementById("errormsg").style.display="block";
                 }
              $("#postResultDiv").html("<p>" + "Post sucess! <br>" + "Email addres: " + user.email + "</br>" + "Password: " + user.upwd + "</br>" +"Valid user: " + user.valid + "</p>");
             },

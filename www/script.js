@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    console.log("Page ready!");
     $("#loginform").submit(function(event) {
         event.preventDefault();
         ajaxPost();

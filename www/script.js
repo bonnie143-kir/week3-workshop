@@ -11,8 +11,11 @@ $(document).ready(function() {
             upwd: $("#upwd").val()
         }
         $.ajax({
-            type: "POST", contentType: "application/json",
-            url: window.location + "api/login", data: JSON.stringify(formData), dataType: 'json',
+            type: "POST", 
+            contentType: "application/json",
+            url: window.location + "api/login", 
+            data: JSON.stringify(formData), 
+            dataType: 'json',
             success : function(user) {
                 if (user.valid == true) {
                     $("#loginform").addClass("success");

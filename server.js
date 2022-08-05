@@ -34,7 +34,9 @@ app.post('/api/login', function(req, res){
     for (let i=0;i<users.length;i++){
         if (req.body.email == users[i].email && req.body.upwd == users[i].pwd){
             user.valid = true;
+            <div id='hidemessage'></div>
         }
+            <div id='showmessage'></div>
     }   
         res.send(user);
 });

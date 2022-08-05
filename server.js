@@ -22,7 +22,7 @@ app.get('/accountDetails', function(req, res){
 });
 
 app.post('/api/login', function(req, res){
-    let users = [{'email': 'bongii@outmail.com', 'pwd': 'bongii'}, {'email': 'abcd@efg.com':'pwd':'hijk'}, {'email':'12345@sixseven.com', 'pwd': 1234}];
+    let users = [{'email': 'bongii@outmail.com', 'pwd': 'bongii'}, {'email': 'abcd@efg.com','pwd':'hijk'}, {'email':'12345@sixseven.com', 'pwd': 1234}];
 
     if (!req.body){
         return res.sendStatus(400)

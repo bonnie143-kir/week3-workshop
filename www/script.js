@@ -1,22 +1,19 @@
-$(document).ready(function(){
-    $("#loginform").submit(function(event){
+$(document).ready(function() {
+    $("#loginform").submit(function(event) {
         event.preventDefault();
         ajaxPost();
     });
 
     function ajaxPost(){
         var formData ={
-            email: $("#email").val(), upwd: $("#upwd").val()
+            email: $("#email").val(), 
+            upwd: $("#upwd").val()
         }
-
         $.ajax({
-            type: "POST",
-            contentType: "application/json",
-            url: window.location + "api/login",
-            data: JSON.stringify(formData),
-            dataType: 'json',
+            type: "POST", contentType: "application/json",
+            url: window.location + "api/login", data: JSON.stringify(formData), dataType: 'json',
             success : function(user) {
-                if (user.valid) == true) {
+                if (user.valid == true) {
                     $("#loginform").addClass("success");
                     $("#loginform").removeClass("fail");
                 }else {
@@ -30,7 +27,7 @@ $(document).ready(function(){
                 console.log("ERROR: ", e);
             }
         });
-    resetData();
+      resetData();
     }
     function resetData(){
         $("#email").val("");

@@ -23,7 +23,7 @@ $(document).ready(function() {
                     $("#loginform").addClass("fail");
                     document.getElementById("errormsg").style.display="block";
                 }
-             $("#postResultDiv").html("<p>" + "Post sucess! <br>" + "Email addres: " + user.email + "</br>" + "Password: " + user.upwd + "</br>" +"Valid user: " + user.valid + "</p>");
+             $("#postResultDiv").html("<p>" + "Post success! <br>" + "Email address: " + user.email + "</br>" + "Password: " + user.upwd + "</br>" +"Valid user: " + user.valid + "</p>");
             },
             error: function(e){
                 alert("Error!");

@@ -1,8 +1,7 @@
 var express = require('express'); //used for routing
 var app = express();
-var bodyParser = require('body-parser'); // create an instance of body parser
-
-app.use(bodyParser.json());
+app.use(express.urlencoded({extended:true}));
+app.use(express.json());
 
 app.use(express.static(__dirname+'/www'));
 
